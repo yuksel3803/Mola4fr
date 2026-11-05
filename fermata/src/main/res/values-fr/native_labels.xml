@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="phone_header_aa_connected">AA connecté</string>
+    <string name="phone_header_aa_disconnect">AA déconnecté</string>
+    <string name="phone_header_choose_media">Choisissez un contenu à contrôler</string>
+    <string name="phone_header_nothing_playing">Aucune lecture en cours</string>
+    <string name="phone_open_on_car_strip_title">Ouvrir dans la voiture</string>
+    <string name="m3u_playlist_agent">Identifiant du navigateur (User-Agent)</string>
+    <string name="media_service_name_auto_debug">Service média Mola</string>
+    <string name="media_service_name_auto_release">Service média Mola</string>
+    <string name="mirror_service_name_debug">Recopie d’écran Mola</string>
+    <string name="mirror_service_name_release">Recopie d’écran Mola</string>
+    <string name="playback_live">EN DIRECT</string>
+    <string name="vfs_smb">Réseau local (SMB)</string>
+    <string name="video_scaling_16">16:9</string>
+    <string name="video_scaling_4">4:3</string>
+</resources>

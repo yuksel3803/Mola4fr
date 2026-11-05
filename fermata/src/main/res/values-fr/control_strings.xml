@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="control_nothing_playing">Nothing playing</string>
-    <string name="control_open_dashboard">Open Mola on the car screen</string>
+    <string name="control_nothing_playing">Aucune lecture en cours</string>
+    <string name="control_open_dashboard">Ouvrir Mola sur l’écran de la voiture</string>
     <string name="control_aa_disconnected">Android Auto disconnected</string>
     <string name="control_aa_connected">Android Auto connected</string>
     <string name="control_aa_visible">Mola is open on the car screen</string>
-    <string name="control_aa_disconnected_detail">Connect Android Auto, then open Mola on the car screen.</string>
-    <string name="control_aa_connected_detail">Open Mola on the car screen to choose an addon.</string>
-    <string name="control_aa_visible_detail">Choose an addon below to open it on the car screen.</string>
-    <string name="control_addons_heading">OPEN ON CAR SCREEN · ENABLED ADDONS</string>
-    <string name="control_open_on_car">Open</string>
-    <string name="control_open_car_first">Open Mola on the car screen first.</string>
-    <string name="control_no_addons">No enabled addons with a car screen.</string>
-    <string name="control_current_content">Current content</string>
-    <string name="control_addon_loading">Loading</string>
-    <string name="control_addon_failed">Failed to load</string>
+    <string name="control_aa_disconnected_detail">Connectez Android Auto, puis ouvrez Mola sur l’écran de la voiture.</string>
+    <string name="control_aa_connected_detail">Ouvrez Mola sur l’écran de la voiture pour choisir un module.</string>
+    <string name="control_aa_visible_detail">Choisissez un module ci-dessous pour l’ouvrir sur l’écran de la voiture.</string>
+    <string name="control_addons_heading">OUVRIR SUR L’ÉCRAN DE LA VOITURE · MODULES ACTIVÉS</string>
+    <string name="control_open_on_car">Ouvrir</string>
+    <string name="control_open_car_first">Ouvrez d’abord Mola sur l’écran de la voiture.</string>
+    <string name="control_no_addons">Aucun module activé compatible avec l’écran de la voiture.</string>
+    <string name="control_current_content">Contenu en cours</string>
+    <string name="control_addon_loading">Chargement</string>
+    <string name="control_addon_failed">Échec du chargement</string>
     <string name="control_aa_unknown">Android Auto connection not verified</string>
-    <string name="control_aa_unknown_detail">Waiting for the official Android Auto connection status.</string>
-    <string name="control_open_failed">Could not open this addon on the car screen.</string>
+    <string name="control_aa_unknown_detail">En attente de l’état de connexion Android Auto.</string>
+    <string name="control_open_failed">Impossible d’ouvrir ce module sur l’écran de la voiture.</string>
 </resources>

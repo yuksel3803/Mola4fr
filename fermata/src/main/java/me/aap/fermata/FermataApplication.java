@@ -76,7 +76,7 @@ public class FermataApplication extends NetSplitCompatApp {
 		preferenceStore = ps;
 		var nativePrefs = ctx.getSharedPreferences("fermata", MODE_PRIVATE);
 		if (!nativePrefs.getBoolean("TURKISH_INTERFACE_V1", false)) {
-			ps.applyIntPref(LOCALE, MainActivityPrefs.Lang.TR.ordinal());
+			ps.applyIntPref(LOCALE, MainActivityPrefs.Lang.FR.ordinal());
 			nativePrefs.edit().putBoolean("TURKISH_INTERFACE_V1", true).apply();
 		}
 		var loc = MainActivityPrefs.Lang.get(ps.getIntPref(LOCALE)).locale;

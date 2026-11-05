@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="epg">Guide des programmes</string>
+    <string name="epg_url">Adresse du guide des programmes (XMLTV)</string>
+</resources>

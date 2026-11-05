@@ -54,7 +54,7 @@
     
     
 
-    <string name="addons">Addons</string>
+    <string name="addons">Modules</string>
     <string name="addon_name_tv">TV</string>
     <string name="addon_name_web_browser">Navigateur Internet</string>
     
@@ -324,9 +324,9 @@
     <string name="eq_normal">Normal</string>
     <string name="eq_classical">Classique</string>
     <string name="eq_dance">Dance</string>
-    <string name="eq_flat">Flat</string>
+    <string name="eq_flat">Neutre</string>
     <string name="eq_folk">Folk</string>
-    <string name="eq_heavy_metal">Heavy Metal</string>
+    <string name="eq_heavy_metal">Heavy metal</string>
     <string name="eq_hip_hop">Hip Hop</string>
     <string name="eq_jazz">Jazz</string>
     <string name="eq_pop">Pop</string>
@@ -505,23 +505,23 @@
 	<string name="voice_trigger_cleared">L’attribution du bouton vocal du véhicule a été effacée.</string>
 	<string name="voice_selection_prompt">Dites numéro un, deux ou trois</string>
     <string name="equalizer_apply_next_session">Les modifications de l\'égaliseur sont enregistrées. Elles seront appliquées à la prochaine session de lecture.</string>
-    <string name="audio_effects_apply">Apply</string>
-    <string name="audio_effects_draft">Unsaved EQ changes</string>
-    <string name="audio_effects_applying">Applying EQ changes...</string>
-    <string name="audio_effects_applied">EQ changes applied</string>
-    <string name="audio_effects_apply_failed">EQ changes saved, but could not be applied</string>
-    <string name="audio_effects_flat">Flat</string>
-    <string name="audio_effects_custom">Custom</string>
-    <string name="audio_effects_set_flat">Reset EQ to 0</string>
-    <string name="audio_effects_scale">dB gain, -15 to +15 (0 dB center)</string>
+    <string name="audio_effects_apply">Appliquer</string>
+    <string name="audio_effects_draft">Réglages de l’égaliseur non enregistrés</string>
+    <string name="audio_effects_applying">Application de l’égaliseur…</string>
+    <string name="audio_effects_applied">Égaliseur appliqué</string>
+    <string name="audio_effects_apply_failed">Réglages de l’égaliseur enregistrés, mais non appliqués</string>
+    <string name="audio_effects_flat">Neutre</string>
+    <string name="audio_effects_custom">Personnalisé</string>
+    <string name="audio_effects_set_flat">Remettre l’égaliseur à 0</string>
+    <string name="audio_effects_scale">Gain en dB, de −15 à +15 (0 dB au centre)</string>
     <string name="audio_effects_mode">Mode</string>
-    <string name="audio_effects_band_scroll">Equalizer bands</string>
+    <string name="audio_effects_band_scroll">Bandes de l’égaliseur</string>
     <string name="audio_effects_band_format">%1$s Hz, %2$s dB</string>
-    <string name="audio_effects_additional">Additional effects</string>
-    <string name="audio_effects_expand">Show additional effects</string>
-    <string name="audio_effects_collapse">Hide additional effects</string>
-    <string name="audio_effects_disabled">Disabled</string>
-    <string name="audio_effects_range_error">Enter a value from %1$d to %2$d.</string>
+    <string name="audio_effects_additional">Effets supplémentaires</string>
+    <string name="audio_effects_expand">Afficher les effets supplémentaires</string>
+    <string name="audio_effects_collapse">Masquer les effets supplémentaires</string>
+    <string name="audio_effects_disabled">Désactivé</string>
+    <string name="audio_effects_range_error">Saisissez une valeur entre %1$d et %2$d.</string>
 
     <string name="legacy_preset_migration_notice">Le préréglage d\'égaliseur précédent de votre appareil n\'a pas pu être converti automatiquement. Choisissez ou ajustez l\'égaliseur une fois.</string>
     <string name="dem_home_web">Mola • En direct ↗</string>

@@ -1,4 +1,4 @@
 <resources>
-<string name="show_shortcut_rail">Show shortcut menu</string>
-<string name="show_shortcut_rail_sub">Display the original shortcuts on the side</string>
+<string name="show_shortcut_rail">Afficher le menu des raccourcis</string>
+<string name="show_shortcut_rail_sub">Afficher les raccourcis d’origine sur le côté</string>
 </resources>

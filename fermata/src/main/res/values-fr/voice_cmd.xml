@@ -20,7 +20,7 @@
 <resources>
     <string name="vcmd_action_find">&action_find;</string>
     <string name="vcmd_action_open">&action_open;</string>
-    <string name="vcmd_action_pause">&action_pause;</string>
+    <string name="vcmd_action_pause">pause</string>
     <string name="vcmd_action_stop">&action_stop;</string>
     <string name="vcmd_action_play">(&action_play;)|démarrer</string>
     <string name="vcmd_action_play_favorites">(&action_play;) (&location_favorites;)</string>

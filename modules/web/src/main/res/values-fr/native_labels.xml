@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stremio_open_on_car_failed">Impossible d’ouvrir ce flux Stremio sur l’écran de la voiture.</string>
+</resources>

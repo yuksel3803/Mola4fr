@@ -78,7 +78,7 @@ public interface MainActivityPrefs
 	Pref<BooleanSupplier> SMART_TOP_RECENT_VIDEO =
 			Pref.b("smart_top/recent_video", false);
 	Pref<IntSupplier> CLOCK_POS = Pref.i("CLOCK_POS", CLOCK_POS_NONE);
-	Pref<IntSupplier> LOCALE = Pref.i("LOCALE", Lang.TR.ordinal());
+	Pref<IntSupplier> LOCALE = Pref.i("LOCALE", Lang.FR.ordinal());
 	int INITIAL_SETUP_CURRENT_VERSION = 1;
 	Pref<BooleanSupplier> INITIAL_SETUP_COMPLETED =
 			Pref.b("INITIAL_SETUP_COMPLETED", false);

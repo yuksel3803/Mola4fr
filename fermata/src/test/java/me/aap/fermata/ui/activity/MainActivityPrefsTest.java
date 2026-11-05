@@ -10,8 +10,8 @@ import me.aap.utils.ui.view.NavBarView;
 
 public class MainActivityPrefsTest {
 	@Test
-	public void turkishAndHiddenShortcutRailAreTheDefaults() {
-		assertEquals(MainActivityPrefs.Lang.TR.ordinal(), MainActivityPrefs.LOCALE.getDefaultValue().getAsInt());
+	public void frenchAndHiddenShortcutRailAreTheDefaults() {
+		assertEquals(MainActivityPrefs.Lang.FR.ordinal(), MainActivityPrefs.LOCALE.getDefaultValue().getAsInt());
 		assertFalse(MainActivityPrefs.SHOW_SHORTCUT_RAIL.getDefaultValue().getAsBoolean());
 	}
 
