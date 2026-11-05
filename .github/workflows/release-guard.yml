@@ -1,0 +1,62 @@
+name: Release guard
+
+# Vérifie chaque release publiée à la main (hors workflow "Publish app update").
+# Une release "Latest" est lue par l'updater intégré (GithubUpdater) : si son tag ne
+# correspond pas au code source, ou s'il manque l'APK ou le manifeste, les utilisateurs
+# ne reçoivent pas la mise à jour et la conformité GPL (source correspondante) n'est pas assurée.
+
+on:
+  release:
+    types: [published, edited]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Tag de la release à vérifier
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the release tag
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.release.tag_name || inputs.tag }}
+
+      - name: Tag, version and assets must match
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.event.release.tag_name || inputs.tag }}
+        run: |
+          set -euo pipefail
+          version=$(grep -oP '^appVersionName = "\K[^"]+' gradle/libs.versions.toml)
+          code=$(grep -oP '^appVersionCode = "\K[^"]+' gradle/libs.versions.toml)
+          echo "Source au tag $TAG : versionName=$version versionCode=$code"
+          errors=0
+
+          if [ "$TAG" != "v$version" ]; then
+            echo "::error::Le tag $TAG ne correspond pas à appVersionName ($version). Le code source publié n'est pas celui de cet APK."
+            errors=1
+          fi
+
+          assets=$(gh release view "$TAG" -R "$GITHUB_REPOSITORY" --json assets --jq '.assets[].name')
+          for required in FermataX-yeni-arayuz-debug.apk update-auto-debug.json; do
+            if ! grep -qx "$required" <<<"$assets"; then
+              echo "::error::Asset manquant : $required (l'updater intégré ne trouvera pas cette version)."
+              errors=1
+            fi
+          done
+
+          if grep -qx update-auto-debug.json <<<"$assets"; then
+            gh release download "$TAG" -R "$GITHUB_REPOSITORY" -p update-auto-debug.json -O manifest.json
+            m_code=$(python3 -c 'import json;print(json.load(open("manifest.json"))["versionCode"])')
+            if [ "$m_code" != "$code" ]; then
+              echo "::error::update-auto-debug.json annonce versionCode=$m_code mais la source au tag a $code."
+              errors=1
+            fi
+          fi
+
+          exit $errors
