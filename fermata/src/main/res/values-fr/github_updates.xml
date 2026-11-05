@@ -3,7 +3,7 @@
     <string name="github_updates">Mises à jour de l’application</string>
     <string name="github_updates_help">Les mises à jour sont recherchées uniquement quand l’application est ouverte, jamais en arrière-plan. Le téléchargement et l’installation demandent toujours votre confirmation.</string>
     <string name="github_updates_auto">Rechercher les nouvelles versions</string>
-    <string name="github_update_available">Mise à jour de Mola disponible</string>
+    <string name="github_update_available">Mise à jour de MOLA4FR disponible</string>
     <string name="github_update_version">Version %1$s</string>
     <string name="github_updates_check">Rechercher des mises à jour</string>
     <string name="github_updates_install">Télécharger et installer</string>

@@ -2,7 +2,7 @@
 <resources>
     <string name="greeting_settings">Accueil vocal</string>
     <string name="greeting_enabled">M’accueillir quand la voiture se connecte</string>
-    <string name="greeting_enabled_sub">Mola prononce un court message d’accueil avec la voix du téléphone. Le micro n’est pas utilisé.</string>
+    <string name="greeting_enabled_sub">MOLA4FR prononce un court message d’accueil avec la voix du téléphone. Le micro n’est pas utilisé.</string>
     <string name="greeting_name">Votre prénom</string>
     <string name="greeting_name_hint">Facultatif</string>
     <string name="greeting_once_per_day">Une seule fois par jour</string>
@@ -10,6 +10,6 @@
     <string name="greeting_day">Bon après-midi</string>
     <string name="greeting_evening">Bonsoir</string>
     <string name="greeting_night">Bonne nuit</string>
-    <string name="greeting_text">%1$s, bienvenue dans Mola. Bonne route !</string>
-    <string name="greeting_text_name">%1$s %2$s, bienvenue dans Mola. Bonne route !</string>
+    <string name="greeting_text">%1$s, bienvenue dans MOLA4FR. Bonne route !</string>
+    <string name="greeting_text_name">%1$s %2$s, bienvenue dans MOLA4FR. Bonne route !</string>
 </resources>

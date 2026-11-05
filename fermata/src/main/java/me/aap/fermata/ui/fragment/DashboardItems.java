@@ -377,7 +377,7 @@ public final class DashboardItems {
                         "WindAsist", "windasist.com", null);
             case DEM_TV:
                 return new Item(name, R.id.dashboard_dem_tv_action, R.drawable.dem_mark,
-                        "Mola", ctx.getString(R.string.dem_home_web), null);
+                        "MOLA4FR", ctx.getString(R.string.dem_home_web), null);
 			case MIRROR:
 				return new Item(name, R.id.dashboard_mirror_action, R.drawable.screen_mirroring,
 						ctx.getString(R.string.dashboard_mirror_title),

@@ -2,7 +2,7 @@
 <resources>
     <string name="greeting_settings">Sesli karşılama</string>
     <string name="greeting_enabled">Araca bağlanınca sesli karşıla</string>
-    <string name="greeting_enabled_sub">Mola, telefonun sesiyle kısa bir karşılama yapar. Mikrofon kullanılmaz.</string>
+    <string name="greeting_enabled_sub">MOLA4FR, telefonun sesiyle kısa bir karşılama yapar. Mikrofon kullanılmaz.</string>
     <string name="greeting_name">Adınız</string>
     <string name="greeting_name_hint">İsteğe bağlı</string>
     <string name="greeting_once_per_day">Günde yalnızca bir kez</string>
@@ -10,6 +10,6 @@
     <string name="greeting_day">İyi günler</string>
     <string name="greeting_evening">İyi akşamlar</string>
     <string name="greeting_night">İyi geceler</string>
-    <string name="greeting_text">%1$s, Mola’ya hoş geldin. İyi yolculuklar!</string>
-    <string name="greeting_text_name">%1$s %2$s, Mola’ya hoş geldin. İyi yolculuklar!</string>
+    <string name="greeting_text">%1$s, MOLA4FR’ya hoş geldin. İyi yolculuklar!</string>
+    <string name="greeting_text_name">%1$s %2$s, MOLA4FR’ya hoş geldin. İyi yolculuklar!</string>
 </resources>

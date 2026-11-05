@@ -82,7 +82,7 @@ final class InlineMirrorView extends FrameLayout implements SurfaceHolder.Callba
                     projection = capture;
                     projection.registerCallback(callback, handler);
                     lease = new MirrorSurfaceLease<>((surface, w, h, density) -> {
-                        VirtualDisplay display = projection.createVirtualDisplay("Mola / Ekran", w, h,
+                        VirtualDisplay display = projection.createVirtualDisplay("MOLA4FR / Ãcran", w, h,
                                 density, DisplayManager.VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR,
                                 surface, null, handler);
                         if (display == null) throw new IllegalStateException("Display unavailable");

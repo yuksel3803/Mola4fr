@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="control_nothing_playing">Aucune lecture en cours</string>
-    <string name="control_open_dashboard">Ouvrir Mola sur l’écran de la voiture</string>
+    <string name="control_open_dashboard">Ouvrir MOLA4FR sur l’écran de la voiture</string>
     <string name="control_aa_disconnected">Android Auto disconnected</string>
     <string name="control_aa_connected">Android Auto connected</string>
-    <string name="control_aa_visible">Mola is open on the car screen</string>
-    <string name="control_aa_disconnected_detail">Connectez Android Auto, puis ouvrez Mola sur l’écran de la voiture.</string>
-    <string name="control_aa_connected_detail">Ouvrez Mola sur l’écran de la voiture pour choisir un module.</string>
+    <string name="control_aa_visible">MOLA4FR is open on the car screen</string>
+    <string name="control_aa_disconnected_detail">Connectez Android Auto, puis ouvrez MOLA4FR sur l’écran de la voiture.</string>
+    <string name="control_aa_connected_detail">Ouvrez MOLA4FR sur l’écran de la voiture pour choisir un module.</string>
     <string name="control_aa_visible_detail">Choisissez un module ci-dessous pour l’ouvrir sur l’écran de la voiture.</string>
     <string name="control_addons_heading">OUVRIR SUR L’ÉCRAN DE LA VOITURE · MODULES ACTIVÉS</string>
     <string name="control_open_on_car">Ouvrir</string>
-    <string name="control_open_car_first">Ouvrez d’abord Mola sur l’écran de la voiture.</string>
+    <string name="control_open_car_first">Ouvrez d’abord MOLA4FR sur l’écran de la voiture.</string>
     <string name="control_no_addons">Aucun module activé compatible avec l’écran de la voiture.</string>
     <string name="control_current_content">Contenu en cours</string>
     <string name="control_addon_loading">Chargement</string>
