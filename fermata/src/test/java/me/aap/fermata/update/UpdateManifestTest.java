@@ -18,20 +18,20 @@ public class UpdateManifestTest {
     }
     private JSONObject manifest() throws Exception {
         return new JSONObject().put("versionCode", 310).put("versionName", "2.0.3")
-                .put("packageId", "me.app.fermataX.auto.debug").put("sha256", "a".repeat(64))
+                .put("packageId", "fr.mola4fr.auto.debug").put("sha256", "a".repeat(64))
                 .put("size", 12345).put("minSdkVersion", 28).put("apkAsset", UpdateManifest.APK_ASSET);
     }
     private void rejected(JSONObject release, JSONObject manifest) {
         assertThrows(org.json.JSONException.class, () -> UpdateManifest.parse(release, manifest,
-                "me.app.fermataX.auto.debug", 36));
+                "fr.mola4fr.auto.debug", 36));
     }
     @Test public void acceptsCompleteCompatibleRelease() throws Exception {
-        UpdateManifest update = UpdateManifest.parse(release(), manifest(), "me.app.fermataX.auto.debug", 36);
+        UpdateManifest update = UpdateManifest.parse(release(), manifest(), "fr.mola4fr.auto.debug", 36);
         assertEquals(310, update.versionCode());
         assertTrue(update.apkUrl().endsWith("/v2.0.3/" + UpdateManifest.APK_ASSET));
     }
     @Test public void rejectsOtherPackageAndMalformedChecksum() throws Exception {
-        rejected(release(), manifest().put("packageId", "me.app.fermataX.auto"));
+        rejected(release(), manifest().put("packageId", "fr.mola4fr.auto"));
         rejected(release(), manifest().put("sha256", "fake"));
     }
     @Test public void rejectsIncompleteAndForeignAssets() throws Exception {
@@ -61,7 +61,7 @@ public class UpdateManifestTest {
     @Test public void acceptsVersionBoundRepositoryLfsAndRejectsUnknownChannels() throws Exception {
         JSONObject release = release().put("assets", new org.json.JSONArray());
         UpdateManifest update = UpdateManifest.parse(release, manifest().put("distribution", "repository-lfs"),
-                "me.app.fermataX.auto.debug", 36);
+                "fr.mola4fr.auto.debug", 36);
         assertEquals("https://media.githubusercontent.com/media/" + UpdateManifest.REPOSITORY +
                 "/v2.0.3/distribution/" + UpdateManifest.APK_ASSET, update.apkUrl());
         assertEquals("https://raw.githubusercontent.com/" + UpdateManifest.REPOSITORY +

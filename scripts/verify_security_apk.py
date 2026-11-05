@@ -30,7 +30,7 @@ assert 'BIND_ACCESSIBILITY_SERVICE' not in manifest
 assert 'xposedmodule' not in manifest
 assert 'me.app.fermatax.auto.ProjectionActivity' in manifest
 assert 'me.app.fermatax.auto.ProjectionService' in manifest
-assert "package: name='me.app.fermataX.auto.debug'" in badging
+assert "package: name='fr.mola4fr.auto.debug'" in badging
 removed = ['AccessibilityEventDispatcherService', 'XposedEventDispatcherService', 'Xposed', 'Su',
            'EventDispatcher', 'MirrorDisplay', 'MirrorActivity', 'MirrorService', 'MirrorServiceFS',
            'LauncherActivity']

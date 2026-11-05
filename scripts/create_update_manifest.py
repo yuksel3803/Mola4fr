@@ -18,9 +18,9 @@ metadata = {
     'distribution': 'repository-lfs' if len(sys.argv) == 4 and sys.argv[3] == 'repository-lfs' else 'release',
     'versionCode': code,
     'versionName': version,
-    'packageId': 'me.app.fermataX.auto.debug',
+    'packageId': 'fr.mola4fr.auto.debug',
     'minSdkVersion': int(re.search(r'sdkMin = "(\d+)"', versions).group(1)),
-    'apkAsset': 'FermataX-yeni-arayuz-debug.apk',
+    'apkAsset': 'MOLA4FR.apk',
     'sha256': checksum,
     'size': apk.stat().st_size,
 }

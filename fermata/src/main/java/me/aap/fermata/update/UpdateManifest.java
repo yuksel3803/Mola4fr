@@ -7,9 +7,9 @@ import org.json.JSONObject;
 /** A release is installable only when its manifest matches a public GitHub APK asset. */
 public record UpdateManifest(int versionCode, String versionName, String packageId,
                              String sha256, String apkUrl, long size) {
-    public static final String REPOSITORY = "moris545454/araba-";
+    public static final String REPOSITORY = "yuksel3803/Mola4fr";
     public static final String MANIFEST_ASSET = "update-auto-debug.json";
-    public static final String APK_ASSET = "FermataX-yeni-arayuz-debug.apk";
+    public static final String APK_ASSET = "MOLA4FR.apk";
 
     public static String assetUrl(JSONObject release, String name) throws JSONException {
         if (release.optBoolean("draft") || release.optBoolean("prerelease"))

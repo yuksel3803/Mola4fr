@@ -43,7 +43,7 @@ jobs:
           fi
 
           assets=$(gh release view "$TAG" -R "$GITHUB_REPOSITORY" --json assets --jq '.assets[].name')
-          for required in FermataX-yeni-arayuz-debug.apk update-auto-debug.json; do
+          for required in MOLA4FR.apk update-auto-debug.json; do
             if ! grep -qx "$required" <<<"$assets"; then
               echo "::error::Asset manquant : $required (l'updater intégré ne trouvera pas cette version)."
               errors=1

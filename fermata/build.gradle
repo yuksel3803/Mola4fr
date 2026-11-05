@@ -1,6 +1,6 @@
 if (gradle.ext.enableGoogleServices) apply plugin: 'com.google.gms.google-services'
 
-def defaultApplicationId = 'me.app.fermataX'
+def defaultApplicationId = 'fr.mola4fr'
 def configuredApplicationId = project.getProperties().getOrDefault('APP_ID', defaultApplicationId)
 def configuredAutoIdSuffix = project.getProperties().getOrDefault('APP_ID_SFX', '')
 def expectedAutoReleaseApplicationId = configuredApplicationId + '.auto' + configuredAutoIdSuffix
