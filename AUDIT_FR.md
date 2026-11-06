@@ -1,5 +1,7 @@
 # Audit du dépôt Mola (moris545454/araba-)
 
+> Ce rapport décrit le dépôt d'origine avant la création de MOLA4FR. La plupart des points ont été traités depuis : version et tag alignés, APK servis en assets de release, README à jour, JDK 21, dépôt nettoyé.
+
 Audit réalisé le 6 novembre 2026 sur `main` @ `3f45ad3` (le même commit que le tag `v4.1.10`).
 
 ## 1. Critique — la release 4.1.10 ne correspond pas au code source

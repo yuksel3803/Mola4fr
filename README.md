@@ -6,16 +6,19 @@ Application Android en français pour la voiture : TV/IPTV, radio, podcasts, You
 
 ## Fonctions
 
-- **TV / IPTV** : listes M3U par défaut et ajout de vos propres listes avec le bouton **+**.
-- **Radio** : stations turques par défaut, recherche par pays, popularité et étiquettes, ajout de vos propres flux.
+- **TV / IPTV** : chaînes françaises gratuites par défaut (liste publique [iptv-org](https://github.com/iptv-org/iptv)) et ajout de vos propres listes M3U avec le bouton **+**.
+- **Radio** : radios françaises en tête (annuaire Radio Browser), recherche par pays, popularité et étiquettes, ajout de vos propres flux.
 - **Podcasts** : recherche, abonnements et reprise de lecture là où vous vous êtes arrêté.
 - **YouTube et navigateur** web.
 - **Recopie de l'écran** du téléphone sur l'écran de la voiture (avec l'autorisation d'Android à chaque fois).
 - **Touches au volant** pour changer de chaîne, de station ou d'épisode.
+- **Commandes vocales en français** : « mets la radio France Inter », « chaîne suivante », « pause », « ouvre YouTube »…
 - **Accueil vocal** facultatif quand la voiture se connecte.
 - Pas de notifications publicitaires, pas de mise à jour en arrière-plan.
 
 ## Installation
+
+MOLA4FR fonctionne sur les téléphones Android 9 ou plus récents équipés d'un processeur 64 bits (la quasi-totalité des téléphones récents).
 
 1. Télécharge `MOLA4FR.apk` avec le lien ci-dessus, puis ouvre-le sur ton téléphone.
 2. Si Android le demande, autorise l'installation depuis ton navigateur ou ton gestionnaire de fichiers.

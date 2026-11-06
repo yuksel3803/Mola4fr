@@ -1,3 +1,16 @@
+# MOLA4FR 1.1.0 — une app vraiment française
+
+- **Radios françaises en tête** de l'écran Radio (les plus écoutées de l'annuaire Radio Browser).
+- **Chaînes TV françaises gratuites** par défaut, à la place de la liste turque. Tu peux toujours ajouter tes listes avec **+**.
+- **Commandes vocales en français** : « mets la radio France Inter », « chaîne suivante », « station précédente », « pause », « reprends », « ouvre YouTube », « cherche sur YouTube recette crêpes », « joue mes favoris », « avance de 30 secondes »…
+- **Nouveau logo MOLA4FR**, aussi dans Android Auto.
+- **APK plus léger** : uniquement pour les téléphones 64 bits (la quasi-totalité des téléphones récents).
+- Dépôt nettoyé des anciens documents de Mola.
+
+**Note :** si tu as installé la 1.0.0, tes listes TV/radio existantes sont conservées. Les nouvelles listes françaises sont ajoutées à côté ; tu peux supprimer les anciennes par un appui long.
+
+---
+
 # MOLA4FR 1.0.0 — première version
 
 - **Interface entièrement en français** par défaut. La langue reste modifiable dans **Paramètres → Interface → Langue**.

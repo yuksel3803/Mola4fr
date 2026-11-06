@@ -6,5 +6,5 @@
 	<string name="tv_restore_default">Varsayılan listeleri geri yükle</string>
 	<string name="tv_copy_link">Liste bağlantısını kopyala</string>
 	<string name="tv_link_copied">Liste bağlantısı kopyalandı.</string>
-	<string name="default_turkish_radios">Türk radyoları</string>
+	<string name="default_radios_fr">Fransız radyoları</string>
 </resources>

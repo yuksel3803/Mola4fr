@@ -6,5 +6,5 @@
 	<string name="tv_restore_default">Restore default lists</string>
 	<string name="tv_copy_link">Copy playlist link</string>
 	<string name="tv_link_copied">Playlist link copied.</string>
-	<string name="default_turkish_radios">Turkish radio stations</string>
+	<string name="default_radios_fr">French radio stations</string>
 </resources>

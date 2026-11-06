@@ -19,7 +19,7 @@ import me.aap.utils.async.FutureSupplier;
 public class RadioRootItem extends ExtRoot implements RadioItem {
 	public static final String ID = "Radio";
 	static final String SCHEME = "radio";
-	static final String TURKEY_CODE = "TR";
+	static final String FRANCE_CODE = "FR";
 	private final RadioBrowserApi api;
 	private final RadioSourceStore sourceStore;
 
@@ -76,7 +76,7 @@ public class RadioRootItem extends ExtRoot implements RadioItem {
 		List<RadioSource> sources = sourceStore.list();
 		List<Item> items = new ArrayList<>(sources.size() + 4);
 		for (RadioSource source : sources) items.add(new RadioSourceItem(this, source));
-		items.add(turkey());
+		items.add(france());
 		items.add(RadioStationFolder.popular(this));
 		items.add(RadioStationFolder.topVoted(this));
 		items.add(RadioDirectoryFolder.countries(this));
@@ -122,10 +122,10 @@ public class RadioRootItem extends ExtRoot implements RadioItem {
 		return ID.equals(id) || id.startsWith(SCHEME + ':');
 	}
 
-	/** Turkish stations first: the most-listened Radio Browser stations for country code TR. */
-	private RadioStationFolder turkey() {
+	/** French stations first: the most-listened Radio Browser stations for country code FR. */
+	private RadioStationFolder france() {
 		return RadioStationFolder.country(this, new RadioBrowserApi.DirectoryEntry(
-				getLib().getContext().getString(R.string.radio_turkey), TURKEY_CODE, 0));
+				getLib().getContext().getString(R.string.radio_france), FRANCE_CODE, 0));
 	}
 
 	@Nullable

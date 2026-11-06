@@ -47,7 +47,7 @@ public class TvPlaylistUrlsTest {
 	@Test
 	public void comparesLocationsIgnoringHostCaseAndTrailingSlash() {
 		assertTrue(TvPlaylistUrls.sameLocation(TvSourceRepository.DEFAULT_PLAYLIST_URL,
-				"HTTPS://OnurEroz.com/indirmeler/turk/index.m3u"));
+				"HTTPS://IPTV-ORG.GitHub.io/iptv/countries/fr.m3u"));
 		assertTrue(TvPlaylistUrls.sameLocation("http://example.com/x/", "http://example.com/x"));
 		assertFalse(TvPlaylistUrls.sameLocation("http://example.com/A.m3u", "http://example.com/a.m3u"));
 		assertFalse(TvPlaylistUrls.sameLocation("http://example.com/a.m3u", null));

@@ -134,11 +134,11 @@ public class TvRootItem extends ItemContainer<TvSourceItem> implements TvItem {
 		TvM3uFileSystem fs = TvM3uFileSystem.getInstance();
 		sources.seedDefaultPlaylist(id -> new TvM3uFile(fs.toRid(id)).getUrl(), () ->
 				fs.toId(fs.newDefaultSource(TvSourceRepository.DEFAULT_PLAYLIST_URL,
-						getLib().getContext().getString(R.string.default_turkish_channels)).getRid()));
+						getLib().getContext().getString(R.string.default_channels_fr)).getRid()));
 		try {
 			sources.seedDefaultRadioPlaylist(id -> new TvM3uFile(fs.toRid(id)).getUrl(), () ->
 					fs.toId(fs.newDefaultSource(TvSourceRepository.DEFAULT_RADIO_URL,
-							getLib().getContext().getString(R.string.default_turkish_radios)).getRid()));
+							getLib().getContext().getString(R.string.default_radios_fr)).getRid()));
 		} catch (RuntimeException failure) {
 			Log.e(failure, "Failed to register the default radio list");
 		}
@@ -299,11 +299,11 @@ public class TvRootItem extends ItemContainer<TvSourceItem> implements TvItem {
 	void restoreDefaultPlaylists() {
 		if (!hasDefaultPlaylist()) {
 			addM3uSource(TvSourceRepository.DEFAULT_PLAYLIST_URL,
-					getLib().getContext().getString(R.string.default_turkish_channels));
+					getLib().getContext().getString(R.string.default_channels_fr));
 		}
 		if (!hasDefaultRadioPlaylist()) {
 			addM3uSource(TvSourceRepository.DEFAULT_RADIO_URL,
-					getLib().getContext().getString(R.string.default_turkish_radios));
+					getLib().getContext().getString(R.string.default_radios_fr));
 		}
 	}
 

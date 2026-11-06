@@ -17,14 +17,14 @@ final class TvSourceRepository {
 			Pref.ia("SOURCE_IDS", () -> new int[0]).withInheritance(false);
 	private static final String SOURCE_TYPE_PREFIX = "SOURCE_TYPE#";
 	private static final String M3U_ID_PREFIX = "M3UID#";
-	static final String DEFAULT_PLAYLIST_URL = "https://onureroz.com/indirmeler/turk/index.m3u";
+	static final String DEFAULT_PLAYLIST_URL = "https://iptv-org.github.io/iptv/countries/fr.m3u";
 	private static final Pref<me.aap.utils.function.BooleanSupplier> DEFAULT_PLAYLIST_SEEDED =
-			Pref.b("TURKISH_PLAYLIST_SEEDED_V1", false).withInheritance(false);
-	/** Turkish stations from the public Radio Browser directory, most voted first. */
+			Pref.b("FRENCH_PLAYLIST_SEEDED_V1", false).withInheritance(false);
+	/** French stations from the public Radio Browser directory, most voted first. */
 	static final String DEFAULT_RADIO_URL = "https://all.api.radio-browser.info/m3u/stations/search" +
-			"?countrycode=TR&order=votes&reverse=true&hidebroken=true&limit=150";
+			"?countrycode=FR&order=votes&reverse=true&hidebroken=true&limit=150";
 	private static final Pref<me.aap.utils.function.BooleanSupplier> DEFAULT_RADIO_SEEDED =
-			Pref.b("TURKISH_RADIO_SEEDED_V1", false).withInheritance(false);
+			Pref.b("FRENCH_RADIO_SEEDED_V1", false).withInheritance(false);
 	private final PreferenceStore store;
 
 	TvSourceRepository(PreferenceStore store) {
