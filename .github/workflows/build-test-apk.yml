@@ -43,7 +43,7 @@ jobs:
         run: |
           mkdir -p "$ANDROID_USER_HOME"
           if [ -n "$DEBUG_KEYSTORE" ]; then
-            printf '%s' "$DEBUG_KEYSTORE" | base64 --decode > "$ANDROID_USER_HOME/debug.keystore"
+            printf '%s' "$DEBUG_KEYSTORE" | tr -d ' \r\n' | base64 --decode > "$ANDROID_USER_HOME/debug.keystore"
             chmod 600 "$ANDROID_USER_HOME/debug.keystore"
             echo "Stable signing key restored."
           else
